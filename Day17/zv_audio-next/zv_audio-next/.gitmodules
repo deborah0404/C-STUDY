@@ -1,0 +1,3 @@
+[submodule "zdp_protocol"]
+	path = zdp_protocol
+	url = git@gitlab.dev.zettakit.com:zvision-group/zdp-dev/zdp_protocol.git

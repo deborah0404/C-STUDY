@@ -1,0 +1,15 @@
+{
+	"gw_enabled": false,
+	"gw_port": 2888,
+	"gw_addr": "192.168.111.59",
+	"gw_license": "Z2F0ZXdheS56ZHBAemV0dGFraXQK",
+	"gw_transport": "tcp",
+
+	"addr": "192.168.77.1",
+	"port": 5918,
+	"index": 255,
+	"transport": "tcp",
+
+	"log_level": "debug",
+	"log_name": ""
+}

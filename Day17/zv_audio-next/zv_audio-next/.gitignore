@@ -1,0 +1,29 @@
+# ignore tmp file dir
+.vs/
+.vscode/
+.idea/
+
+# ignore tmp cmake file dir
+CMakeFiles/
+CMakeCache.txt
+CPackConfig.cmake
+CPackSourceConfig.cmake
+cmake_install.cmake
+Makefile
+
+# ignore build res
+/proj/
+/bin/
+/build/
+
+# ignore local test file and env
+local_*/
+*_autogen/
+
+# npm tools
+node_modules/
+package-lock.json
+
+# 
+libva-master/
+*.deb

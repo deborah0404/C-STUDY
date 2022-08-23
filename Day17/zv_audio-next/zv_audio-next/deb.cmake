@@ -1,0 +1,20 @@
+
+# 得到版本hash
+execute_process (
+	COMMAND git describe --tags WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+	TIMEOUT 5
+	OUTPUT_VARIABLE GIT_TAG_VERSION
+	OUTPUT_STRIP_TRAILING_WHITESPACE
+)
+message("pack zv_audio ${GIT_TAT_VERSION}")
+
+IF (UNIX)
+	# for deb
+	set(CPACK_GENERATOR "DEB")
+	set(CPACK_DEBIAN_PACKAGE_MAINTAINER "zvaudio")
+	set(CPACK_DEBIAN_PACKAGE_DESCRIPTION "zvaudio for audio playback and record")
+	set(CPACK_DEBIAN_PACKAGE_VERSION "1.0-${GIT_TAG_VERSION}")
+	set(CPACK_DEBIAN_FILE_NAME DEB-DEFAULT)
+	set(CPACK_DEBIAN_PACKAGE_DEPENDS "zv_platform")
+	include(CPack)
+ENDIF ()

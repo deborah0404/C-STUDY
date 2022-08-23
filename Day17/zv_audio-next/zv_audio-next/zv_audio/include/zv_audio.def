@@ -1,0 +1,9 @@
+LIBRARY zv_audio
+EXPORTS
+zva_init
+zva_uninit
+zva_set_callback
+zva_set_proxy
+zva_remove_proxy
+zva_start
+zva_stop
